@@ -70,7 +70,7 @@ bool userconfirm(bool assume_no, bool assume_yes, bool default_yes) {
         yes_pattern = nl_langinfo(YESEXPR);
         no_pattern = nl_langinfo(NOEXPR);
     } else {
-        yes_pattern = "^[yY]";
+        yes_pattern = "^[yY]$";
         no_pattern = "^[nN]";
     }
 
